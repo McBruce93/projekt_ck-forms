@@ -5,8 +5,9 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 	</head>
 	<body>
-		<div class="frivillig-form-dansk" id="frivillig-form-dansk">
-			<form action="volunteer.php" id="frivillig" method="POST">
+		<div class="volunteer-form" id="volunteer-form">
+			<form action="volunteer.php" id="volunteer" method="POST">
+
 				<table>
           <tr>
             <td id="td_first"><h5>Fornavn</h5><h4>*</h4></td>
@@ -30,6 +31,7 @@
           </tr>
         </table>
 			  <br><br>
+
 			  <h5>Dage du kan arbejde</h5><h4>*</h4>
 				<ul>
 					<label><input type="checkbox" name="day[]" value="monday" id="day" > Mandag</label>
@@ -41,6 +43,7 @@
 					<label><input type="checkbox" name="day[]" value="sunday" id="day" > Søndag</label>
 				</ul>
 			  <br>
+
 			  <h5>Jobtype du ønsker</h5><h4>*</h4>
 				<ul>
 					<label><input type="checkbox" name="job[]" value="cafe_worker" id="job" > Café Medarbejder</label>
@@ -51,10 +54,12 @@
 					<label><input type="checkbox" name="job[]" value="janitor" id="job" > Altmuligmand</label><br>
 				</ul>
 			  <br>
+
 				<h5>Lidt om dig selv</h5>
-				<textarea name="about_you" form="frivillig" required></textarea><br>
+				<textarea name="about_you" form="volunteer" required></textarea><br>
 				<p style="display: inline;">Felter markeret med </p><h4 style="display: inline;">*</h4><p style="display: inline;"> er påkrævet</p>
 			  <input type="submit" value="Send" id="send">
+
 			</form>
 		</div>
 	</body>
