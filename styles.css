@@ -24,7 +24,9 @@ color: #C70800;
 display: inline;
 }
 
-form#volunteer ul {
+form#volunteer ul.checkbox_group1,
+form#volunteer ul.checkbox_group2,
+form#volunteer ul.checkbox_group3 {
 padding-left: 10px;
 }
 
