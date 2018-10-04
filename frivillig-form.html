@@ -4,36 +4,38 @@
 		<link rel="stylesheet" type="text/css" href="styles.css">
 	</head>
 	<body>
-		<form action="/whatever.php" id="frivillig">
-		  <h5>Navn</h5>
-			<input type="text" name="fulde_navn" id="navn"><br>
-		  <br>
-		  <h5>Email</h5>
-			<input type="email" name="email" id="email"><br>
-		  <br>
-		  <h5>Telefon Nummer</h5>
-			<input type="tel" name="telefon_nummer" id="telefon"><br>
-		  <br><br>
-		  <h5>Dage du kan arbejde</h5><br>
-			<p><input type="checkbox" name="dag" value="Mandag" id="dage"> Mandag</p><br>
-			<p><input type="checkbox" name="dag" value="Tirsdag" id="dage"> Tirsdag</p><br>
-			<p><input type="checkbox" name="dag" value="Onsdag" id="dage"> Onsdag</p><br>
-			<p><input type="checkbox" name="dag" value="Torsdag" id="dage"> Torsdag</p><br>
-			<p><input type="checkbox" name="dag" value="Fredag" id="dage"> Fredag</p><br>
-			<p><input type="checkbox" name="dag" value="Lørdag" id="dage"> Lørdag</p><br>
-			<p><input type="checkbox" name="dag" value="Søndag" id="dage"> Søndag</p><br>
-		  <br>
-		  <h5>Jobtype du ønsker</h5><br>
-			<p><input type="checkbox" name="job" value="Café medarbejder" id="job"> Café medarbejder</p><br>
-			<p><input type="checkbox" name="job" value="Official" id="job"> Official</p><br>
-			<p><input type="checkbox" name="job" value="Runner" id="job"> Runner</p><br>
-			<p><input type="checkbox" name="job" value="Rengøring" id="job"> Rengøring</p><br>
-			<p><input type="checkbox" name="job" value="Banevedligeholdelse" id="job"> Banevedligeholdelse</p><br>
-			<p><input type="checkbox" name="job" value="Altmuligmand" id="job"> Altmuligmand</p><br>
-		  <br>
-			<h5>Lidt om dig selv</h5><br>
-			<textarea name="om_dig" form="frivillig"></textarea><br>
-		  <input type="submit" value="Send" id="send">
-		</form>
+		<div class="frivillig-form-dansk" id="frivillig-form-dansk">
+			<form action="/whatever.php" id="frivillig">
+			  <h3>Navn</h3><br>
+				<input type="text" name="fulde_navn" id="navn"><br>
+			  <br>
+			  <h3>Email</h3><br>
+				<input type="email" name="email" id="email"><br>
+			  <br>
+			  <h3>Telefon Nummer</h3><br>
+				<input type="tel" name="telefon_nummer" id="telefon"><br>
+			  <br>
+			  <h3>Dage du kan arbejde</h3><br>
+				<p><input type="checkbox" name="dag" value="Mandag" id="dage"> Mandag</p><br>
+				<p><input type="checkbox" name="dag" value="Tirsdag" id="dage"> Tirsdag</p><br>
+				<p><input type="checkbox" name="dag" value="Onsdag" id="dage"> Onsdag</p><br>
+				<p><input type="checkbox" name="dag" value="Torsdag" id="dage"> Torsdag</p><br>
+				<p><input type="checkbox" name="dag" value="Fredag" id="dage"> Fredag</p><br>
+				<p><input type="checkbox" name="dag" value="Lørdag" id="dage"> Lørdag</p><br>
+				<p><input type="checkbox" name="dag" value="Søndag" id="dage"> Søndag</p><br>
+			  <br>
+			  <h3>Jobtype du ønsker</h3><br>
+				<p><input type="checkbox" name="job" value="Café medarbejder" id="job"> Café medarbejder</p><br>
+				<p><input type="checkbox" name="job" value="Official" id="job"> Official</p><br>
+				<p><input type="checkbox" name="job" value="Runner" id="job"> Runner</p><br>
+				<p><input type="checkbox" name="job" value="Rengøring" id="job"> Rengøring</p><br>
+				<p><input type="checkbox" name="job" value="Banevedligeholdelse" id="job"> Banevedligeholdelse</p><br>
+				<p><input type="checkbox" name="job" value="Altmuligmand" id="job"> Altmuligmand</p><br>
+			  <br>
+				<h3>Lidt om dig selv</h3><br>
+				<textarea name="om_dig" form="frivillig"></textarea><br>
+			  <input type="submit" value="Send" id="send">
+			</form>
+		</div>
 	</body>
 </html>
