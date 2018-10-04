@@ -1,45 +1,46 @@
 /* Frivllig Form - Dansk */
-div#frivillig-form-dansk.frivillig-form-dansk,
-div#kontakt-form-dansk.kontakt-form-dansk {
+div#volunteer-form.volunteer-form,
+div#contact-form.contact-form {
     border-style: solid;
     border-width: 1px 3px 3px 1px;
     border-color: #111112;
+    background-color: #232224;
 }
 
-form#frivillig,
-form#kontakt {
+form#volunteer,
+form#contact {
 	padding: 40px;
 }
 
-form#frivillig h5,
-form#kontakt h5 {
+form#volunteer h5,
+form#contact h5 {
 color: #EFEFEF;
 display: inline;
 }
 
-form#frivillig h4,
-form#kontakt h4 {
+form#volunteer h4,
+form#contact h4 {
 color: #C70800;
 display: inline;
 }
 
-form#frivillig ul {
+form#volunteer ul {
 padding-left: 10px;
 }
 
-form#frivillig label {
+form#volunteer label {
 display: inline-block;
 color: #EFEFEF;
 padding-right: 20px;
 padding-top: 10px;
 }
 
-form#frivillig input#first_name,
-form#frivillig input#last_name,
-form#frivillig input#email,
-form#kontakt input#first_name,
-form#kontakt input#last_name,
-form#kontakt input#email {
+form#volunteer input#first_name,
+form#volunteer input#last_name,
+form#volunteer input#email,
+form#contact input#first_name,
+form#contact input#last_name,
+form#contact input#email {
 	width: 100%;
 	padding-top: 5px;
 	padding-bottom: 5px;
@@ -47,8 +48,8 @@ form#kontakt input#email {
 	padding-right: 10px;
 }
 
-form#frivillig input#phone_number,
-form#kontakt input#subject {
+form#volunteer input#phone_number,
+form#contact input#subject {
 	width: 50%;
 	padding-top: 5px;
 	padding-bottom: 5px;
@@ -56,8 +57,8 @@ form#kontakt input#subject {
 	padding-right: 10px;
 }
 
-form#frivillig textarea,
-form#kontakt textarea {
+form#volunteer textarea,
+form#contact textarea {
 	width: 100%;
 	height: 200px;
 	padding-top: 5px;
@@ -84,29 +85,29 @@ input#send:hover {
   color: #232224;
 }
 
-/* Kontakt form - Dansk */
-form#kontakt table,
-form#kontakt tbody,
-form#kontakt tr,
-form#kontakt input#first_name,
-form#kontakt input#last_name,
-form#frivillig table,
-form#frivillig tbody,
-form#frivillig tr,
-form#frivillig input#first_name,
-form#frivillig input#last_name,
-form#frivillig input#email,
-form#frivillig input#phone_number {
+/* contact form - Dansk */
+form#contact table,
+form#contact tbody,
+form#contact tr,
+form#contact input#first_name,
+form#contact input#last_name,
+form#volunteer table,
+form#volunteer tbody,
+form#volunteer tr,
+form#volunteer input#first_name,
+form#volunteer input#last_name,
+form#volunteer input#email,
+form#volunteer input#phone_number {
 width: 100% !important;
 }
 
-form#kontakt td#td_first,
-form#frivillig td#td_first,
-form#frivillig td#td_mail {
+form#contact td#td_first,
+form#volunteer td#td_first,
+form#volunteer td#td_mail {
 padding-right: 2% !important;
 }
-form#kontakt td#td_last,
-form#frivillig td#td_last,
-form#frivillig td#td_phone {
+form#contact td#td_last,
+form#volunteer td#td_last,
+form#volunteer td#td_phone {
 padding-left: 2% !important;
 }
