@@ -3,6 +3,7 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="styles.css">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+		<script src="validation_danish.js"></script>
 	</head>
 	<body>
 		<div class="volunteer-form" id="volunteer-form">
@@ -33,26 +34,26 @@
 			  <br><br>
 
 			  <h5>Dage du kan arbejde</h5><h4>*</h4>
-				<ul>
-					<label><input type="checkbox" name="day[]" value="monday" id="day" > Mandag</label>
-					<label><input type="checkbox" name="day[]" value="tuesday" id="day" > Tirsdag</label>
-					<label><input type="checkbox" name="day[]" value="wednesday" id="day" > Onsdag</label>
-					<label><input type="checkbox" name="day[]" value="thursday" id="day" > Torsdag</label><br>
-					<label><input type="checkbox" name="day[]" value="friday" id="day" > Fredag</label>
-					<label><input type="checkbox" name="day[]" value="saturday" id="day" > Lørdag</label>
-					<label><input type="checkbox" name="day[]" value="sunday" id="day" > Søndag</label>
-				</ul>
+				<div class="checkbox_group1">
+					<label><input type="checkbox" name="day" value="monday" id="day" required> Mandag</label>
+					<label><input type="checkbox" name="day" value="tuesday" id="day" required> Tirsdag</label>
+					<label><input type="checkbox" name="day" value="wednesday" id="day" required> Onsdag</label>
+					<label><input type="checkbox" name="day" value="thursday" id="day" required> Torsdag</label><br>
+					<label><input type="checkbox" name="day" value="friday" id="day" required> Fredag</label>
+					<label><input type="checkbox" name="day" value="saturday" id="day" required> Lørdag</label>
+					<label><input type="checkbox" name="day" value="sunday" id="day" required> Søndag</label>
+				</div>
 			  <br>
 
 			  <h5>Jobtype du ønsker</h5><h4>*</h4>
-				<ul>
-					<label><input type="checkbox" name="job[]" value="cafe_worker" id="job" > Café Medarbejder</label>
-					<label><input type="checkbox" name="job[]" value="official" id="job" > Official</label>
-					<label><input type="checkbox" name="job[]" value="runner" id="job" > Runner</label>
-					<label><input type="checkbox" name="job[]" value="renovation" id="job" > Rengøring</label><br>
-					<label><input type="checkbox" name="job[]" value="track_maintenance" id="job" > Banevedligeholdelse</label>
-					<label><input type="checkbox" name="job[]" value="janitor" id="job" > Altmuligmand</label><br>
-				</ul>
+				<div class="checkbox_group2">
+					<label><input type="checkbox" name="job" value="cafe_worker" id="job" required> Café Medarbejder</label>
+					<label><input type="checkbox" name="job" value="official" id="job" required> Official</label>
+					<label><input type="checkbox" name="job" value="runner" id="job" required> Runner</label>
+					<label><input type="checkbox" name="job" value="renovation" id="job" required> Rengøring</label><br>
+					<label><input type="checkbox" name="job" value="track_maintenance" id="job" required> Banevedligeholdelse</label>
+					<label><input type="checkbox" name="job" value="janitor" id="job" required> Altmuligmand</label><br>
+				</div>
 			  <br>
 
 				<h5>Lidt om dig selv</h5>

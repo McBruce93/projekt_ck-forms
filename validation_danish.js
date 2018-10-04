@@ -1,5 +1,5 @@
 $(function () {
-    var requiredCheckboxes = $('.checkbox-group1 :checkbox[required]');
+    var requiredCheckboxes = $('.checkbox_group1 :checkbox[required]');
     requiredCheckboxes.change(function () {
         if (requiredCheckboxes.is(':checked')) {
             requiredCheckboxes.removeAttr('required');
@@ -9,7 +9,7 @@ $(function () {
     });
 });
 $(function () {
-    var requiredCheckboxes = $('.checkbox-group2 :checkbox[required]');
+    var requiredCheckboxes = $('.checkbox_group2 :checkbox[required]');
     requiredCheckboxes.change(function () {
         if (requiredCheckboxes.is(':checked')) {
             requiredCheckboxes.removeAttr('required');
