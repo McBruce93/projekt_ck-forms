@@ -9,5 +9,8 @@ if (isset($_POST['first_name']) && isset($_POST['last_name']) && isset($_POST['e
     $days[] = $_POST['day'];
     $job[] = $_POST['job'];
 } else {
-    echo "<script>alert('Du skal udfylde alle punkterne.')</script>";
+    echo"<script>
+            alert('Du skal udfylde alle felterne');
+            window.location.href='../volunteer_form_danish.html';
+        </script>";
 }
