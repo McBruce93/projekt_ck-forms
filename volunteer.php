@@ -6,8 +6,8 @@ if (isset($_POST['first_name']) && isset($_POST['last_name']) && isset($_POST['e
     $last_name = $_POST['last_name'];
     $email = $_POST['email'];
     $phone = $_POST['phone'];
-    $days[] = $_POST['day'];
-    $job[] = $_POST['job'];
+    $days[] = $_POST['day[]'];
+    $job[] = $_POST['job[]'];
 } else {
     echo "<script>
             alert('Du skal udfylde alle felterne');
