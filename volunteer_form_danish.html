@@ -7,17 +7,28 @@
 	<body>
 		<div class="frivillig-form-dansk" id="frivillig-form-dansk">
 			<form action="volunteer.php" id="frivillig" method="POST">
-			  <h5>Fornavn</h5><h4>*</h4>
-				<input type="text" name="first_name" id="first_name" required><br>
-				<br>
-				<h5>Efternavn</h5><h4>*</h4>
-				<input type="text" name="last_name" id="last_name" required><br>
+				<table>
+          <tr>
+            <td id="td_first"><h5>Fornavn</h5><h4>*</h4></td>
+            <td id="td_last"><h5>Efternavn</h5><h4>*</h4></td>
+          </tr>
+          <tr>
+            <td id="td_first"><input type="text" name="first_name" id="first_name" required></td>
+            <td id="td_last"><input type="text" name="last_name" id="last_name" required></td>
+          </tr>
+        </table>
 			  <br>
-			  <h5>Email</h5><h4>*</h4>
-				<input type="email" name="email" id="email" required><br>
-			  <br>
-			  <h5>Telefon Nummer</h5><h4>*</h4><br>
-				<input type="tel" name="phone_number" id="phone_number" required><br>
+
+				<table>
+          <tr>
+            <td id="td_mail"><h5>Email</h5><h4>*</h4></td>
+            <td id="td_phone"><h5>Telefon Nummer</h5><h4>*</h4><br></td>
+          </tr>
+          <tr>
+            <td id="td_mail"><input type="email" name="email" id="email" required><br></td>
+            <td id="td_phone"><input type="tel" name="phone_number" id="phone_number" required></td>
+          </tr>
+        </table>
 			  <br><br>
 			  <h5>Dage du kan arbejde</h5><h4>*</h4>
 				<ul>
