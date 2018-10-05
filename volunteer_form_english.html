@@ -2,47 +2,64 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 	</head>
 	<body>
-		<div class="frivillig-form-dansk" id="frivillig-form-dansk">
-			<form action="volunteer.php" id="frivillig" method="POST">
-			  <h5>First Name</h5><h4>*</h4>
-				<input type="text" name="first_name" id="first_name"><br>
-				<br>
-				<h5>Last Name</h5><h4>*</h4>
-				<input type="text" name="last_name" id="last_name"><br>
+		<div class="volunteer-form" id="volunteer-form">
+			<form action="volunteer.php" id="volunteer" method="POST">
+
+				<table>
+          <tr>
+            <td id="td_first"><h5>First Name</h5><h4>*</h4></td>
+            <td id="td_last"><h5>Last Name</h5><h4>*</h4></td>
+          </tr>
+          <tr>
+            <td id="td_first"><input type="text" name="first_name" id="first_name" required></td>
+            <td id="td_last"><input type="text" name="last_name" id="last_name" required></td>
+          </tr>
+        </table>
 			  <br>
-			  <h5>Email</h5><h4>*</h4>
-				<input type="email" name="email" id="email"><br>
-			  <br>
-			  <h5>Phone Number</h5><h4>*</h4><br>
-				<input type="tel" name="phone_number" id="phone_number"><br>
+
+				<table>
+          <tr>
+            <td id="td_mail"><h5>Email</h5><h4>*</h4></td>
+            <td id="td_phone"><h5>Phone Number</h5><h4>*</h4><br></td>
+          </tr>
+          <tr>
+            <td id="td_mail"><input type="email" name="email" id="email" required><br></td>
+            <td id="td_phone"><input type="tel" name="phone_number" id="phone_number" required></td>
+          </tr>
+        </table>
 			  <br><br>
+
 			  <h5>Day you can work</h5><h4>*</h4>
 				<ul>
-					<label><input type="checkbox" name="day" value="monday" id="day"> Monday</label>
-					<label><input type="checkbox" name="day" value="tuesday" id="day"> Tuesday</label>
-					<label><input type="checkbox" name="day" value="wednesday" id="day"> Wednesday</label>
-					<label><input type="checkbox" name="day" value="thursday" id="day"> Thursday</label><br>
-					<label><input type="checkbox" name="day" value="friday" id="day"> Friday</label>
-					<label><input type="checkbox" name="day" value="saturday" id="day"> Saturday</label>
-					<label><input type="checkbox" name="day" value="sunday" id="day"> Sunday</label>
+					<label><input type="checkbox" name="day[]" value="monday" id="day"> Monday</label>
+					<label><input type="checkbox" name="day[]" value="tuesday" id="day"> Tuesday</label>
+					<label><input type="checkbox" name="day[]" value="wednesday" id="day"> Wednesday</label>
+					<label><input type="checkbox" name="day[]" value="thursday" id="day"> Thursday</label><br>
+					<label><input type="checkbox" name="day[]" value="friday" id="day"> Friday</label>
+					<label><input type="checkbox" name="day[]" value="saturday" id="day"> Saturday</label>
+					<label><input type="checkbox" name="day[]" value="sunday" id="day"> Sunday</label>
 				</ul>
 			  <br>
+				
 			  <h5>The job(s) you want</h5><h4>*</h4>
 				<ul>
-					<label><input type="checkbox" name="job" value="cafe_worker" id="job"> Café Staff</label>
-					<label><input type="checkbox" name="job" value="official" id="job"> Official</label>
-					<label><input type="checkbox" name="job" value="runner" id="job"> Runner</label>
-					<label><input type="checkbox" name="job" value="renovation" id="job"> Cleaning</label><br>
-					<label><input type="checkbox" name="job" value="track_maintenance" id="job"> Racetrack Maintenance</label>
-					<label><input type="checkbox" name="job" value="janitor" id="job"> Handyman</label><br>
+					<label><input type="checkbox" name="job[]" value="cafe_worker" id="job" > Café Staff</label>
+					<label><input type="checkbox" name="job[]" value="official" id="job" > Official</label>
+					<label><input type="checkbox" name="job[]" value="runner" id="job" > Runner</label>
+					<label><input type="checkbox" name="job[]" value="renovation" id="job" > Cleaning</label><br>
+					<label><input type="checkbox" name="job[]" value="track_maintenance" id="job" > Racetrack Maintenance</label>
+					<label><input type="checkbox" name="job[]" value="janitor" id="job" > Handyman</label><br>
 				</ul>
 			  <br>
+
 				<h5>About you</h5>
-				<textarea name="about_you" form="frivillig"></textarea><br>
+				<textarea name="about_you" form="volunteer"></textarea><br>
 				<p style="display: inline;">Fields marked with </p><h4 style="display: inline;">*</h4><p style="display: inline;"> is required</p>
 			  <input type="submit" value="Send" id="send">
+				
 			</form>
 		</div>
 	</body>
