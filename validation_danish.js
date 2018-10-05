@@ -37,6 +37,36 @@ function lastNameCheck() {
     }
 }
 
+function checkBoxField1Check() {
+    var anySelected = false;
+    checkBoxes1 = document.getElementsByName("day");
+    for (let i = 0; i < checkBoxes1.length; i++) {
+        if (checkBoxes1[i].checked) {
+            anySelected = true;
+        }
+    }
+    if (!anySelected) {
+        checkBoxes1[0].setCustomValidity("Du skal vælge mindst én dag.");
+    } else {
+        checkBoxes1[0].setCustomValidity("");
+    }
+}
+
+function checkBoxField2Check() {
+    var anySelected = false;
+    checkBoxes2 = document.getElementsByName("job");
+    for (let i = 0; i < checkBoxes2.length; i++) {
+        if (checkBoxes2[i].checked) {
+            anySelected = true;
+        }
+    }
+    if (!anySelected) {
+        checkBoxes2[0].setCustomValidity("Du skal vælge mindst ét job.");
+    } else {
+        checkBoxes2[0].setCustomValidity("");
+    }
+}
+
 function emailCheck() {
     var email = document.querySelector("#email");
     if (email.value.length < 1) {
@@ -57,7 +87,6 @@ function phoneNumberCheck() {
 
 
 function aboutCheck() {
-    console.log("Halloo??");
     var about = document.querySelector("#about_you");
     if (about.value.length < 1) {
         about.setCustomValidity("Du skal skrive lidt om dig selv.");

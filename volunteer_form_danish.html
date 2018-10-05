@@ -57,9 +57,9 @@
 			  <br>
 
 				<h5>Lidt om dig selv</h5>
-				<textarea name="about_you" form="volunteer" required></textarea><br>
+				<textarea name="about_you" form="volunteer" id="about_you" required></textarea><br>
 				<p style="display: inline;">Felter markeret med </p><h4 style="display: inline;">*</h4><p style="display: inline;"> er påkrævet</p>
-			  <input type="submit" value="Send" id="send">
+			  <input type="submit" value="Send" id="send" onclick="firstNameCheck();lastNameCheck();emailCheck();phoneNumberCheck();checkBoxField1Check();checkBoxField2Check();aboutCheck();">
 
 			</form>
 		</div>
