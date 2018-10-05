@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+	<body>
+		<div class="sponsor-form" id="sponsor-form">
+			<form action="sponsor.php" id="sponsor" method="POST">
+
+				<table>
+          <tr>
+            <td id="td_first"><h5>First Name</h5><h4>*</h4></td>
+            <td id="td_last"><h5>Last Name</h5><h4>*</h4></td>
+          </tr>
+          <tr>
+            <td id="td_first"><input type="text" name="first_name" id="first_name" required></td>
+            <td id="td_last"><input type="text" name="last_name" id="last_name" required></td>
+          </tr>
+        </table>
+			  <br>
+
+				<h5>Company Name</h5><h4>*</h4>
+				<input type="text" name="last_name" id="last_name" required>
+			  <br><br>
+
+				<table>
+          <tr>
+            <td id="td_mail"><h5>Email</h5><h4>*</h4></td>
+            <td id="td_phone"><h5>Phone Number</h5><h4>*</h4><br></td>
+          </tr>
+          <tr>
+            <td id="td_mail"><input type="email" name="email" id="email" required><br></td>
+            <td id="td_phone"><input type="tel" name="phone_number" id="phone_number" required></td>
+          </tr>
+        </table>
+			  <br><br>
+
+			  <h5>Sponsor package</h5><h4>*</h4>
+				<ul class="radio_group1">
+					<label><input type="radio" name="sponsor_type[]" value="Guld Sponsor" id="gold_sponsor"> Gold Sponsor</label>
+					<label><input type="radio" name="sponsor_type[]" value="Sølv Sponsor" id="silver_sponsor"> Silver Sponsor</label>
+					<label><input type="radio" name="sponsor_type[]" value="Bronze Sponsor" id="bronze_sponsor"> Bronze Sponsor</label>
+				</ul>
+        <p>The sponsor package defines the amount of banner space you'll receive (it also defines the size of the banner at the Track, if selected).</p>
+			  <br>
+
+			  <h5>Banner at the Track</h5><h4>*</h4>
+				<ul class="radio_group2">
+					<label><input type="radio" name="yes_no[]" value="Ja" id="sponsor"> Yes please</label>
+					<label><input type="radio" name="yes_no[]" value="Nej" id="sponsor"> No thanks</label>
+				</ul>
+        <p>A banner at the track costs extra. The banner itself must be provided by you (the price depends on the chosen sponsor package).</p>
+			  <br>
+
+				<h5>Details</h5>
+				<textarea name="details" form="frivillig"></textarea><br>
+				<p style="display: inline;">Fields marked with </p><h4 style="display: inline;">*</h4><p style="display: inline;"> is required</p>
+			  <input type="submit" value="Send" id="send">
+
+			</form>
+		</div>
+	</body>
+</html>
