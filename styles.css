@@ -1,6 +1,7 @@
 /* Frivllig Form - Dansk */
 div#volunteer-form.volunteer-form,
-div#contact-form.contact-form {
+div#contact-form.contact-form,
+div#sponsor-form.sponsor-form {
     border-style: solid;
     border-width: 1px 3px 3px 1px;
     border-color: #111112;
@@ -8,29 +9,34 @@ div#contact-form.contact-form {
 }
 
 form#volunteer,
-form#contact {
+form#contact,
+form#sponsor {
 	padding: 40px;
 }
 
 form#volunteer h5,
-form#contact h5 {
+form#contact h5,
+form#sponsor h5 {
 color: #EFEFEF;
 display: inline;
 }
 
 form#volunteer h4,
-form#contact h4 {
+form#contact h4,
+form#sponsor h4 {
 color: #C70800;
 display: inline;
 }
 
 form#volunteer ul.checkbox_group1,
 form#volunteer ul.checkbox_group2,
-form#volunteer ul.checkbox_group3 {
+form#sponsor ul.radio_group1,
+form#sponsor ul.radio_group2 {
 padding-left: 10px;
 }
 
-form#volunteer label {
+form#volunteer label,
+form#sponsor label {
 display: inline-block;
 color: #EFEFEF;
 padding-right: 20px;
@@ -42,7 +48,10 @@ form#volunteer input#last_name,
 form#volunteer input#email,
 form#contact input#first_name,
 form#contact input#last_name,
-form#contact input#email {
+form#contact input#email,
+form#sponsor input#first_name,
+form#sponsor input#last_name,
+form#sponsor input#email {
 	width: 100%;
 	padding-top: 5px;
 	padding-bottom: 5px;
@@ -51,7 +60,9 @@ form#contact input#email {
 }
 
 form#volunteer input#phone_number,
-form#contact input#subject {
+form#sponsor input#phone_number,
+form#contact input#subject,
+form#sponsor input#subject {
 	width: 50%;
 	padding-top: 5px;
 	padding-bottom: 5px;
@@ -60,7 +71,8 @@ form#contact input#subject {
 }
 
 form#volunteer textarea,
-form#contact textarea {
+form#contact textarea,
+form#sponsor textarea {
 	width: 100%;
 	height: 200px;
 	padding-top: 5px;
@@ -87,7 +99,6 @@ input#send:hover {
   color: #232224;
 }
 
-/* contact form - Dansk */
 form#contact table,
 form#contact tbody,
 form#contact tr,
@@ -99,17 +110,29 @@ form#volunteer tr,
 form#volunteer input#first_name,
 form#volunteer input#last_name,
 form#volunteer input#email,
-form#volunteer input#phone_number {
+form#volunteer input#phone_number,
+form#sponsor table,
+form#sponsor tbody,
+form#sponsor tr,
+form#sponsor input#first_name,
+form#sponsor input#last_name,
+form#sponsor input#email,
+form#sponsor input#phone_number {
 width: 100% !important;
 }
 
 form#contact td#td_first,
 form#volunteer td#td_first,
-form#volunteer td#td_mail {
+form#sponsor td#td_first,
+form#volunteer td#td_mail,
+form#sponsor td#td_mail {
 padding-right: 2% !important;
 }
+
 form#contact td#td_last,
 form#volunteer td#td_last,
-form#volunteer td#td_phone {
+form#sponsor td#td_last,
+form#volunteer td#td_phone,
+form#sponsor td#td_phone{
 padding-left: 2% !important;
 }
