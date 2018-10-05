@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+	<body>
+		<div class="contact-form" id="contact-form">
+			<form action="contact.php" id="contact" method="POST">
+
+        <table>
+          <tr>
+            <td id="td_first"><h5>First Name</h5><h4>*</h4></td>
+            <td id="td_last"><h5>Last Name</h5><h4>*</h4></td>
+          </tr>
+          <tr>
+            <td id="td_first"><input type="text" name="first_name" id="first_name" required></td>
+            <td id="td_last"><input type="text" name="last_name" id="last_name" required></td>
+          </tr>
+        </table>
+			  <br>
+
+			  <h5>Email</h5><h4>*</h4>
+				<input type="email" name="email" id="email" required><br>
+			  <br>
+
+			  <h5>Subject</h5><h4>*</h4><br>
+				<input type="text" name="subject" id="subject"><br>
+			  <br>
+
+				<h5>The Message</h5><h4>*</h4>
+				<textarea name="the_message" form="contakt" required></textarea><br>
+				<p style="display: inline;">Fields marked with </p><h4 style="display: inline;">*</h4><p style="display: inline;"> is required</p>
+
+				<input type="submit" value="Send" id="send">
+
+			</form>
+		</div>
+	</body>
+</html>
