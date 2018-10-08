@@ -1,0 +1,38 @@
+-- CREATE TABLE Volunteers (
+-- 	ID INT AUTO_INCREMENT PRIMARY KEY,
+--     Email VARCHAR(255) UNIQUE NOT NULL,
+--     FirstName VARCHAR(255) NOT NULL,
+--     LastName VARCHAR(255) NOT NULL,
+--     PhoneNumber INT NOT NULL
+--     );
+
+
+CREATE TABLE Jobs (
+	ID INT AUTO_INCREMENT PRIMARY KEY,
+    Email VARCHAR(255) UNIQUE NOT NULL,
+    JobType VARCHAR(255) NOT NULL,
+    FOREIGN KEY fk_volun(Email) REFERENCES Volunteers(Email)
+);
+
+DROP TABLE Days;
+
+CREATE TABLE Days (
+	ID INT AUTO_INCREMENT PRIMARY KEY,
+    Email VARCHAR(255) UNIQUE NOT NULL,
+    WeekDays VARCHAR(255) NOT NULL,
+    FOREIGN KEY fk_volun(Email) REFERENCES Volunteers(Email)
+);
+
+INSERT INTO Volunteers VALUES (0, "test@test.com", "Kasper", "Andreasen", 93604439);
+
+CREATE TABLE Concact (
+	ID INT AUTO_INCREMENT PRIMARY KEY,
+    FirstName VARCHAR(255) NOT NULL,
+    LastName VARCHAR(255) NOT NULL,
+    Email VARCHAR(255) NOT NULL,
+    Subject VARCHAR(255) NOT NULL,
+    Message TEXT NOT NULL
+);
+
+SELECT * FROM Volunteers;
+SELECT * FROM Jobs;
