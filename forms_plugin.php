@@ -9,24 +9,23 @@ Author URI: https://www.cck-webogit.dk/
 License: GPL 3
  */
 
-
 function showDanishContact() {
-    readfile("contact_forms/contact_form_danish.html");
+    readfile(plugins_url('contact_forms/contact_form_danish.html', __FILE__));
 }
 function showEnglishContact() {
-    readfile("contact_forms/contact_form_english.html");
+    readfile(plugins_url("contact_forms/contact_form_english.html", __FILE__));
 }
 function showDanishSponsor() {
-    readfile("sponsor_forms/sponsor_form_danish.html");
+    readfile(plugins_url("sponsor_forms/sponsor_form_danish.html", __FILE__));
 }
 function showEnglishSponsor() {
-    readfile("sponsor_forms/sponsor_form_english.html");
+    readfile(plugins_url("sponsor_forms/sponsor_form_english.html", __FILE__));
 }
 function showDanishVolunteer() {
-    readfile("volunteer_forms/volunteer_form_danish.html");
+    readfile(plugins_url("volunteer_forms/volunteer_form_danish.html", __FILE__));
 }
 function showEnglishVolunteer() {
-    readfile("volunteer_forms/volunteer_form_english.html");
+    readfile(plugins_url("volunteer_forms/volunteer_form_english.html", __FILE__));
 }
 
 add_shortcode('danish_contact', 'showDanishContact');
