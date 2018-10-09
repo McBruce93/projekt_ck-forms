@@ -9,8 +9,6 @@ $jobs = $_POST['job'];
 
 $language = $_SERVER['HTTP_REFERER'];
 
-echo $language;
-
 $daysList = "";
 $jobsList = "";
 

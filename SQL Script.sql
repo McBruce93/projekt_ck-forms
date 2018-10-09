@@ -25,7 +25,7 @@ CREATE TABLE Days (
 
 INSERT INTO Volunteers VALUES (0, "test@test.com", "Kasper", "Andreasen", 93604439);
 
-CREATE TABLE Concact (
+CREATE TABLE Contact (
 	ID INT AUTO_INCREMENT PRIMARY KEY,
     FirstName VARCHAR(255) NOT NULL,
     LastName VARCHAR(255) NOT NULL,
@@ -33,6 +33,9 @@ CREATE TABLE Concact (
     Subject VARCHAR(255) NOT NULL,
     Message TEXT NOT NULL
 );
+
+DROP TABLE Concact;
+
 
 SELECT * FROM Volunteers;
 SELECT * FROM Jobs;

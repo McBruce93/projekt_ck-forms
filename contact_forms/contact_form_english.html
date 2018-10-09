@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="stylesheet" type="text/css" href="../styles.css">
+		<script src="contact_validation_english.js"></script>
 	</head>
 	<body>
 		<div class="contact-form" id="contact-form">
@@ -24,14 +25,14 @@
 			  <br>
 
 			  <h5>Subject</h5><h4>*</h4><br>
-				<input type="text" name="subject" id="subject"><br>
+				<input type="text" name="subject" id="subject" required><br>
 			  <br>
 
 				<h5>Your Message</h5><h4>*</h4>
-				<textarea name="the_message" form="contakt" required></textarea><br>
+				<textarea name="message" id="message" form="contact" required></textarea><br>
 				<p style="display: inline;">Fields marked with </p><h4 style="display: inline;">*</h4><p style="display: inline;"> is required</p>
 
-				<input type="submit" value="Send" id="send">
+				<input type="submit" value="Send" id="send" onclick="firstNameCheck();lastNameCheck();emailCheck();subjectCheck();messageCheck();">
 
 			</form>
 		</div>
