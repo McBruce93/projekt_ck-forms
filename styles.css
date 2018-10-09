@@ -99,6 +99,14 @@ input#send:hover {
   color: #36353B;
 }
 
+input#upload {
+  background-color: #2E2E33;
+  color: #EFEFEF;
+	width: 100%;
+	padding: 20px;
+	font-size: 1em;
+}
+
 form#contact table,
 form#contact tbody,
 form#contact tr,
