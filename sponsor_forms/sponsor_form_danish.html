@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="../styles.css">
+		<link rel="stylesheet" type="text/css" href="wp-content/plugins/forms_plugin/styles.css">
 	</head>
 	<body>
 		<div class="sponsor-form" id="sponsor-form">
-			<form action="sponsor.php" id="sponsor" method="POST">
+			<form action="wp-content/plugins/forms_plugin/sponsor_forms/sponsor.php" id="sponsor" method="POST" enctype="multipart/form-data">
 
 				<table>
           <tr>
@@ -37,19 +37,19 @@
 
 			  <h5>Sponsor pakke</h5><h4>*</h4>
 				<ul class="radio_group1">
-					<label><input type="radio" name="sponsor_type[]" value="Guld Sponsor" id="gold_sponsor"> Guld Sponsor</label>
-					<label><input type="radio" name="sponsor_type[]" value="Sølv Sponsor" id="silver_sponsor"> Sølv Sponsor</label>
-					<label><input type="radio" name="sponsor_type[]" value="Bronze Sponsor" id="bronze_sponsor"> Bronze Sponsor</label>
+					<label><input type="radio" name="sponsor_type" value="Guld Sponsor" id="gold" required> Guld Sponsor</label>
+					<label><input type="radio" name="sponsor_type" value="Sølv Sponsor" id="silver" required> Sølv Sponsor</label>
+					<label><input type="radio" name="sponsor_type" value="Bronze Sponsor" id="bronze" required> Bronze Sponsor</label>
 				</ul>
-			<input type="file" name="pic" accept="image/*" id="upload">
+			<input type="file" name="pic" accept="image/*" id="upload" required>
 			<br><br>
 			<p>Sponsor pakken definerer hvor stort et bannerplads du får (det definerer også størrelsen på banner ved banen hvis det tilvælges).</p>
 			<br>
 
 			  <h5>Banner ved Banen</h5><h4>*</h4>
 				<ul class="radio_group2">
-					<label><input type="radio" name="yes_no[]" value="Ja" id="sponsor"> Ja tak</label>
-					<label><input type="radio" name="yes_no[]" value="Nej" id="sponsor"> Nej tak</label>
+					<label><input type="radio" name="banner" value="Ja" id="banner" required> Ja tak</label>
+					<label><input type="radio" name="banner" value="Nej" id="banner" required> Nej tak</label>
 				</ul>
         <p>Et banner ved banen koster ekstra. Banneret skal selv forsynes (prisen afhænger af den valgte sponsortype).</p>
 			  <br>
