@@ -26,9 +26,9 @@ if (isset($_POST["send"])) {
     }
 }
 
-if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg") {
-    echo "Sorry, only JPG, JPEG and PNG files are allowed.";
-}
+// if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg") {
+//     echo "Sorry, only JPG, JPEG and PNG files are allowed.";
+// }
 
 if ($uploadOK == 0) {
     echo "Sorry, your file was not uploaded.";
