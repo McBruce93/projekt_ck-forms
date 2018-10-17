@@ -1,5 +1,5 @@
 <?php
-include_once 'wp-content/plugins/forms_plugin/dbconn.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/projekt_ck/wp-content/plugins/forms_plugin/dbconn.php';
 $first_name = $_POST['first_name'];
 $last_name = $_POST['last_name'];
 $email = $_POST['email'];
