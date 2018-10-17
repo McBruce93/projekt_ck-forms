@@ -60,6 +60,14 @@ form#sponsor input#email {
 	padding-right: 10px;
 }
 
+input#company_name {
+	width: 100%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
 form#volunteer input#phone_number,
 form#sponsor input#phone_number,
 form#contact input#subject,
