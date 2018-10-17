@@ -1,64 +1,85 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<link rel="stylesheet" type="text/css" href="wp-content/plugins/forms_plugin/styles.css">
-	</head>
-	<body>
-		<div class="sponsor_form" id="sponsor_form">
-			<form action="../wp-content/plugins/forms_plugin/sponsor_forms/sponsor.php" id="sponsor" method="POST" enctype="multipart/form-data">
-				<table>
-          <tr>
-            <td id="td_first"><h5>Fornavn</h5><h4>*</h4></td>
-            <td id="td_last"><h5>Efternavn</h5><h4>*</h4></td>
-          </tr>
-          <tr>
-            <td id="td_first"><input type="text" name="first_name" id="first_name" required></td>
-            <td id="td_last"><input type="text" name="last_name" id="last_name" required></td>
-          </tr>
-        </table>
-			  <br>
 
-				<h5>Firmanavn</h5><h4>*</h4>
-				<input type="text" name="last_name" id="last_name" required>
-			  <br><br>
+<head>
+	<link rel="stylesheet" type="text/css" href="wp-content/plugins/forms_plugin/styles.css">
+</head>
 
-				<table>
-          <tr>
-            <td id="td_mail"><h5>Email</h5><h4>*</h4></td>
-            <td id="td_phone"><h5>Telefon Nummer</h5><h4>*</h4><br></td>
-          </tr>
-          <tr>
-            <td id="td_mail"><input type="email" name="email" id="email" required><br></td>
-            <td id="td_phone"><input type="tel" name="phone_number" id="phone_number" required></td>
-          </tr>
-        </table>
-			  <br><br>
-
-			  <h5>Sponsor pakke</h5><h4>*</h4>
-				<ul class="radio_group1">
-					<label><input type="radio" name="sponsor_level" value="gold" id="gold" required> Guld Sponsor</label>
-					<label><input type="radio" name="sponsor_level" value="silver" id="silver" required> Sølv Sponsor</label>
-					<label><input type="radio" name="sponsor_level" value="bronze" id="bronze" required> Bronze Sponsor</label>
-				</ul>
-			<input type="file" name="pic" accept="image/*" id="upload" required>
-			<br><br>
-			<p>Sponsor pakken definerer hvor stort et bannerplads du får (det definerer også størrelsen på banner ved banen hvis det tilvælges).</p>
+<body>
+	<div class="sponsor_form" id="sponsor_form">
+		<form action="../wp-content/plugins/forms_plugin/sponsor_forms/sponsor.php" id="sponsor" method="POST" enctype="multipart/form-data">
+			<table>
+				<tr>
+					<td id="td_first">
+						<h5>Fornavn</h5>
+						<h4>*</h4>
+					</td>
+					<td id="td_last">
+						<h5>Efternavn</h5>
+						<h4>*</h4>
+					</td>
+				</tr>
+				<tr>
+					<td id="td_first"><input type="text" name="first_name" id="first_name" required></td>
+					<td id="td_last"><input type="text" name="last_name" id="last_name" required></td>
+				</tr>
+			</table>
 			<br>
 
-			  <h5>Banner ved Banen</h5><h4>*</h4>
-				<ul class="radio_group2">
-					<label><input type="radio" name="banner" value="yes" id="banner" required> Ja tak</label>
-					<label><input type="radio" name="banner" value="no" id="banner" required> Nej tak</label>
-				</ul>
-        <p>Et banner ved banen koster ekstra. Banneret skal selv forsynes (prisen afhænger af den valgte sponsortype).</p>
-			  <br>
+			<h5>Firmanavn</h5>
+			<h4>*</h4>
+			<input type="text" name="company_name" id="company_name" required>
+			<br><br>
 
-				<h5>Detaljer</h5>
-				<textarea name="details" form="frivillig"></textarea><br>
-				<p style="display: inline;">Felter markeret med </p><h4 style="display: inline;">*</h4><p style="display: inline;"> er påkrævet</p>
-			  <input type="submit" value="Send" id="send">
+			<table>
+				<tr>
+					<td id="td_mail">
+						<h5>Email</h5>
+						<h4>*</h4>
+					</td>
+					<td id="td_phone">
+						<h5>Telefon Nummer</h5>
+						<h4>*</h4><br>
+					</td>
+				</tr>
+				<tr>
+					<td id="td_mail"><input type="email" name="email" id="email" required><br></td>
+					<td id="td_phone"><input type="tel" name="phone_number" id="phone_number" required></td>
+				</tr>
+			</table>
+			<br><br>
 
-			</form>
-		</div>
-	</body>
+			<h5>Sponsor pakke</h5>
+			<h4>*</h4>
+			<ul class="radio_group1">
+				<label><input type="radio" name="sponsor_level" value="gold" id="gold" required> Guld Sponsor</label>
+				<label><input type="radio" name="sponsor_level" value="silver" id="silver" required> Sølv Sponsor</label>
+				<label><input type="radio" name="sponsor_level" value="bronze" id="bronze" required> Bronze Sponsor</label>
+			</ul>
+			<input type="file" name="pic" accept="image/*" id="upload" required>
+			<br><br>
+			<p>Sponsor pakken definerer hvor stort et bannerplads du får (det definerer også størrelsen på banner ved banen hvis
+				det tilvælges).</p>
+			<br>
+
+			<h5>Banner ved Banen</h5>
+			<h4>*</h4>
+			<ul class="radio_group2">
+				<label><input type="radio" name="banner" value="yes" id="banner" required> Ja tak</label>
+				<label><input type="radio" name="banner" value="no" id="banner" required> Nej tak</label>
+			</ul>
+			<p>Et banner ved banen koster ekstra. Banneret skal selv forsynes (prisen afhænger af den valgte sponsortype).</p>
+			<br>
+
+			<h5>Detaljer</h5>
+			<textarea name="details" form="sponsor" id="details"></textarea><br>
+			<p style="display: inline;">Felter markeret med </p>
+			<h4 style="display: inline;">*</h4>
+			<p style="display: inline;"> er påkrævet</p>
+			<input type="submit" value="Send" id="send">
+
+		</form>
+	</div>
+</body>
+
 </html>

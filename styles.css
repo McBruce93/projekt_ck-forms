@@ -51,6 +51,7 @@ form#contact input#last_name,
 form#contact input#email,
 form#sponsor input#first_name,
 form#sponsor input#last_name,
+form#sponsor input#company_name,
 form#sponsor input#email {
 	width: 100%;
 	padding-top: 5px;

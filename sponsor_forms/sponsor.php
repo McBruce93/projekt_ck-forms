@@ -1,5 +1,5 @@
 <?php
-include_once '../wp-content/plugins/forms_plugin/dbconn.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/projekt_ck/wp-content/plugins/forms_plugin/dbconn.php';
 define ('UPLOAD_ROOT', realpath(dirname(dirname(dirname(dirname(((((__FILE__))))))))));
 $first_name = $_POST['first_name'];
 $last_name = $_POST['last_name'];
@@ -8,6 +8,8 @@ $email = $_POST['email'];
 $phone = $_POST['phone_number'];
 $sponsor_level = $_POST['sponsor_level'];
 $banner = $_POST['banner'];
+$details = $_POST['details'];
+
 
 if (isset($_POST['details'])) {
     $details = $_POST['details'];
@@ -18,7 +20,7 @@ if (isset($_POST['details'])) {
 $target_dir = "wp-content/uploads/";
 $target_file = $target_dir . basename($_FILES['pic']["name"]);
 $uploadOK = 1;
-$insertSponsorStmt = $nutzyjco_33ef8329->prepare("INSERT INTO Sponsor (FirstName, LastName, CompanyName, Email, PhoneNumber, SponsorLevel, BannerAtTrack, Details, ImageName) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+$insertSponsorStmt = $nutzyjco_33ef8329->prepare("INSERT INTO Sponsor (FirstName, LastName, CompanyName, Email, PhoneNumber, SponsorLevel, BannerAtTrack, Details, ImageName) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
 $insertSponsorStmt->bind_param('sssssssss', $first_name, $last_name, $company_name, $email, $phone, $sponsor_level, $banner, $details, basename($_FILES['pic']['name']));
 
 if (isset($_POST["send"])) {
@@ -36,10 +38,15 @@ if ($uploadOK == 0) {
 // if everything is ok, try to upload file
 } else {
     if (move_uploaded_file($_FILES["pic"]["tmp_name"], UPLOAD_ROOT . "/uploads/uploaded_sponsor_images/" . basename($_FILES['pic']['name']))) {
-        $insertSponsorStmt->execute();
-        if ($insertSponsorStmt->affected_rows() === 1) {
+        $rc = $insertSponsorStmt->execute();
+
+        if ($rc === false) {
+            die('execute() failed: ' . htmlspecialchars($insertSponsorStmt->error));
+        }
+        if ($insertSponsorStmt->affected_rows !== 0) {
             echo "Your image " . basename($_FILES['pic']['name']) . " has been successfully uploaded, and your details have been saved. We will be in contact.";
         }
+        $insertSponsorStmt->close();
     } else {
         echo "Sorry, there was an error uploading your file. None of your info has been saved. Please try again, or contact a sysadmin.";
     }
