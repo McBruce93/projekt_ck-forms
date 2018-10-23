@@ -46,6 +46,7 @@ padding-top: 10px;
 form#volunteer input#first_name,
 form#volunteer input#last_name,
 form#volunteer input#email,
+form#volunteer input#event_name,
 form#contact input#first_name,
 form#contact input#last_name,
 form#contact input#email,
@@ -61,6 +62,14 @@ form#sponsor input#email {
 }
 
 input#company_name {
+	width: 100%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+input#event_name {
 	width: 100%;
 	padding-top: 5px;
 	padding-bottom: 5px;
